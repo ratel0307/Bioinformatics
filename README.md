@@ -5,9 +5,10 @@ This repository contains scripts for bioinformatics data processing. The followi
 ## Files
 1. denevo.py
 - A script for processing and analyzing VCF files.
-- Uploaded on: [Enter upload date].
+- Uploaded on: 250114
 2. vcf_to_excel.py
 - A script for converting VCF files into Excel format for better readability.
-- Uploaded on: [Enter upload date].
+- Uploaded on: 250102
+
 
 Feel free to explore the files and contribute to the repository!
