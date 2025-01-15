@@ -33,14 +33,13 @@ def vcf_to_excel_with_meta(vcf_file, excel_file):
 
     print(f"Converted {vcf_file} to {excel_file} with meta information.")
 
-# 사용자로부터 경로 입력받기
-vcf_path = input("VCF 파일 경로를 입력하세요: ").strip('"')  # 입력값에서 큰따옴표 제거
-output_folder = input("엑셀 파일을 저장할 폴더 경로를 입력하세요: ").strip('"')  # 입력값에서 큰따옴표 제거
+# Prompt the user to input the VCF file path
+vcf_path = input("Enter the path to the VCF file: ").strip('"')  # 입력값에서 큰따옴표 제거
+output_folder = input("Enter the folder path to save the Excel file: ").strip('"')  # 입력값에서 큰따옴표 제거
 
-# 자동으로 Excel 파일명 생성
+# Automatically generate the Excel file name based on the VCF file name
 excel_filename = os.path.basename(vcf_path).replace('.vcf', '.xlsx')
 excel_path = os.path.join(output_folder, excel_filename)
 
-# 변환 함수 호출
+# Call the conversion function
 vcf_to_excel_with_meta(vcf_path, excel_path)
-
